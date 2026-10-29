@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gbsnsgrckr/gbsnsgrckr/main/assets/banner-dark.svg">
-  <img src="https://raw.githubusercontent.com/gbsnsgrckr/gbsnsgrckr/main/assets/banner-light.svg" alt="Kyle" width="340">
+  <img src="https://raw.githubusercontent.com/gbsnsgrckr/gbsnsgrckr/main/assets/banner-light.svg" alt="Kyle" width="100%">
 </picture>
 
 Computer science student at Arizona State University, and I run

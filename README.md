@@ -1,4 +1,7 @@
-## Kyle
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gbsnsgrckr/gbsnsgrckr/main/assets/banner-dark.svg">
+  <img src="https://raw.githubusercontent.com/gbsnsgrckr/gbsnsgrckr/main/assets/banner-light.svg" alt="Kyle" width="340">
+</picture>
 
 Computer science student at Arizona State University, and I run
 [Black Canyon Software](https://github.com/BlackCanyonSoftware) — a one-person

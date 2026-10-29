@@ -8,5 +8,5 @@
   <rect x="0" y="0" width="1250.00" height="1409.00" fill="#a86ddb" mask="url(#mono)"/>
 </svg>
 
-  <text x="416.4" y="117.0" font-family="Manrope,'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="52" font-weight="800" fill="#efe9df" letter-spacing="-0.8">Kyle<tspan dx="20" font-size="52" font-weight="400" fill="#a39a8c" letter-spacing="0">·</tspan><tspan dx="20" font-size="24" font-weight="500" fill="#a39a8c" letter-spacing="3.2">gbsnsgrckr</tspan></text>
+  <text x="416.4" y="117.0" font-family="Manrope,'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="52" font-weight="800" fill="#efe9df" letter-spacing="-0.8">Kyle<tspan dx="20" font-size="52" font-weight="400" fill="#a39a8c" letter-spacing="0">·</tspan><tspan dx="20" dy="-7" font-size="24" font-weight="500" fill="#a39a8c" letter-spacing="3.2">gbsnsgrckr</tspan></text>
 </svg>

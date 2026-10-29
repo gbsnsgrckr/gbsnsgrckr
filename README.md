@@ -54,6 +54,19 @@ a seamlessly looping MP4 — for Wallpaper Engine, a phone lock screen, or
 anywhere a looping video works. Every knob pulled out onto a panel, a full-size
 live preview, and a frame-exact video encoder.
 
+### DAYnNIGHT
+
+A live Windows desktop wallpaper that is the sky outside, right now. The sun
+rises when it rises where you are, crosses at the altitude it really crosses
+and sets when it really sets; twilight is the real twilight, the moon shows
+tonight's phase, and four thousand stars turn at the sidereal rate.
+
+There is no video file and no loop — the scene is computed from your clock and
+your coordinates, so a whole day costs a few hundred kilobytes of shader rather
+than tens of gigabytes of frames, and 0.15% of one CPU core to leave running.
+The application is an editor, and a preset is a small file you can change and
+send to someone.
+
 ---
 
 Mostly Python; some JavaScript, Java and C#.

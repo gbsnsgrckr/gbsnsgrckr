@@ -5,7 +5,7 @@
 
 Computer science student at Arizona State University, and I run
 [Black Canyon Software](https://github.com/BlackCanyonSoftware) — a one-person
-shop in Phoenix.
+studio in Phoenix.
 
 Nearly everything I build lives in private repositories, so this profile reads
 quieter than the work is. Here is what is behind it.

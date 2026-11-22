@@ -7,7 +7,7 @@
   </defs>
   <defs><g id="cube" transform="translate(-12 -25.6) scale(0.4)"><polygon class="ft" points="30,0 60,15 30,30 0,15"/><polygon class="fl" points="0,15 30,30 30,64 0,49"/><polygon class="fr" points="60,15 60,49 30,64 30,30"/></g></defs>
   <style>
-@keyframes walker { 0.000% { transform: translateX(930px) } 33.311% { transform: translateX(90px) } 47.901% { transform: translateX(90px) } 81.213% { transform: translateX(930px) } 100.000% { transform: translateX(930px) } }
+@keyframes walker { 0.000% { transform: translateX(1350px) } 33.311% { transform: translateX(150px) } 47.901% { transform: translateX(150px) } 81.213% { transform: translateX(1350px) } 100.000% { transform: translateX(1350px) } }
 .walker { animation: walker 15.01s linear infinite; }
 @keyframes flip { 0.000% { transform: scaleX(1) } 45.636% { transform: scaleX(1) } 46.769% { transform: scaleX(.06) } 47.901% { transform: scaleX(-1) } 97.069% { transform: scaleX(-1) } 98.201% { transform: scaleX(.06) } 99.334% { transform: scaleX(1) } 100.000% { transform: scaleX(1) } }
 .flip { animation: flip 15.01s linear infinite; }
@@ -23,9 +23,20 @@
 .bob { animation: bob 15.01s ease-in-out infinite; }
 @keyframes coil { 0.000% { transform: scale(1,1) rotate(0deg) } 36.975% { transform: scale(1,1) } 40.306% { transform: scale(1.03,.84) } 44.970% { transform: scale(1.03,.84) } 46.969% { transform: scale(1,1) } 81.213% { transform: scale(1,1) } 84.544% { transform: scale(1.03,.84) } 88.208% { transform: scale(1.03,.84) } 89.873% { transform: scale(1,1) } 92.938% { transform: scale(1,1) rotate(0deg) } 93.971% { transform: scale(1,1) rotate(7deg) } 95.003% { transform: scale(1,1) rotate(-6deg) } 96.036% { transform: scale(1,1) rotate(3deg) } 97.069% { transform: scale(1,1) rotate(0deg) } 100.000% { transform: scale(1,1) rotate(0deg) } }
 .coil { animation: coil 15.01s ease-in-out infinite; }
-@keyframes boxL { 0.000% { transform: translateY(40px) scale(1,.9); opacity: 0 } 33.311% { transform: translateY(40px) scale(1,.9); opacity: 0 } 33.378% { transform: translateY(40px) scale(1,.9); opacity: 1 } 34.977% { transform: translateY(-3px) scale(1.08,.94); opacity: 1 } 35.976% { transform: translateY(0) scale(.97,1.06); opacity: 1 } 36.975% { transform: translateY(0) scale(1,1); opacity: 1 } 40.306% { transform: translateY(0) scale(1,1); opacity: 1 } 42.305% { transform: translateY(-23px) scale(.97,1.04); opacity: 1 } 45.303% { transform: translateY(-46px) scale(.9,1.08); opacity: 1 } 45.370% { transform: translateY(-46px) scale(.9,1.08); opacity: 0 } 100.000% { transform: translateY(40px) scale(1,.9); opacity: 0 } }
+@keyframes boxL {
+  0.000% { transform: translateY(-311.4px) scale(1,1); opacity: 0 }
+  33.311% { transform: translateY(-311.4px) scale(1,1); opacity: 0 }
+  33.378% { transform: translateY(-311.4px) scale(.94,1.08); opacity: 1;
+            animation-timing-function: cubic-bezier(.55,.06,.68,.19) }
+  40.306% { transform: translateY(-16.0px) scale(1.12,.86); opacity: 1 }
+  41.300% { transform: translateY(-16.0px) scale(.95,1.06); opacity: 1 }
+  42.200% { transform: translateY(-16.0px) scale(1,1); opacity: 1 }
+  45.303% { transform: translateY(-16.0px) scale(1,1); opacity: 1 }
+  45.370% { transform: translateY(-16.0px) scale(1,1); opacity: 0 }
+  100.000% { transform: translateY(-311.4px) scale(1,1); opacity: 0 }
+}
 .boxL { animation: boxL 15.01s ease-in-out infinite; }
-@keyframes boxR { 0.000% { opacity: 0 } 84.477% { transform: translateY(0); opacity: 0 } 84.544% { transform: translateY(-46px) scale(.9,1.08); opacity: 1 } 86.542% { transform: translateY(-23px) scale(.97,1.04); opacity: 1 } 89.873% { transform: translateY(0) scale(1,1); opacity: 1 } 90.540% { transform: translateY(5px) scale(1.06,.92); opacity: 1 } 92.938% { transform: translateY(40px) scale(1,.9); opacity: 1 } 93.005% { transform: translateY(40px); opacity: 0 } 100.000% { opacity: 0 } }
+@keyframes boxR { 0.000% { opacity: 0 } 84.477% { transform: translateY(0); opacity: 0 } 84.544% { transform: translateY(-16.0px) scale(.9,1.08); opacity: 1 } 86.542% { transform: translateY(-8.0px) scale(.97,1.04); opacity: 1 } 89.873% { transform: translateY(0) scale(1,1); opacity: 1 } 90.540% { transform: translateY(5px) scale(1.06,.92); opacity: 1 } 92.938% { transform: translateY(40px) scale(1,.9); opacity: 1 } 93.005% { transform: translateY(40px); opacity: 0 } 100.000% { opacity: 0 } }
 .boxR { animation: boxR 15.01s ease-in-out infinite; }
 @keyframes held { 0.000% { opacity: 0 } 45.303% { opacity: 0 } 45.370% { opacity: 1 } 84.544% { opacity: 1 } 84.610% { opacity: 0 } 100.000% { opacity: 0 } }
 .held { animation: held 15.01s linear infinite; }
@@ -36,7 +47,7 @@
 @keyframes pulse { 0%, 100% { opacity: .2; transform: scale(.7); } 50% { opacity: .45; transform: scale(1); } }
 .eyes { transform-box: fill-box; transform-origin: 50% 50%; animation: blink 5.2s linear infinite; }
 @keyframes blink { 0%, 90%, 97%, 100% { transform: scaleY(1); } 93%, 94.5% { transform: scaleY(.08); } }
-@media (prefers-reduced-motion: reduce) { .walker, .flip, .legL, .legR, .armL, .armR, .bob, .coil, .boxL, .boxR, .held, .halo, .eyes { animation: none; } .walker { transform: translateX(90px); } }
+@media (prefers-reduced-motion: reduce) { .walker, .flip, .legL, .legR, .armL, .armR, .bob, .coil, .boxL, .boxR, .held, .halo, .eyes { animation: none; } .walker { transform: translateX(150px); } }
 .shell { fill: #d9d9d9; } .joint { fill: #a2a2a2; } .screen { fill: #292c30; } .eye { fill: #8b3df5; } .bulb { fill: #8b3df5; } .halo { fill: #8b3df5; }
 .shadow { fill: #372350; opacity: .16; }
 .ft { fill: #aa6bff; } .fl { fill: #6a00fa; } .fr { fill: #8b3df5; }
@@ -67,9 +78,8 @@
   <path fill="#6f665a" transform="translate(709.29 110.00) scale(0.024000 -0.024000)" d="M74 0V720H190V246L409 511H545L344 276L555 0H415L264 197L190 121V0Z"/>
   <path fill="#6f665a" transform="translate(726.05 110.00) scale(0.024000 -0.024000)" d="M74 0V511H161L176 436Q178 439 186.0 452.0Q194 465 211.0 481.0Q228 497 254.0 509.0Q280 521 317 521Q370 521 403.5 500.0Q437 479 453.5 442.5Q470 406 470 359Q470 348 469.0 336.5Q468 325 467 317H369V337Q369 358 361.0 380.0Q353 402 334.0 417.0Q315 432 281 432Q256 432 238.5 421.5Q221 411 210.0 395.0Q199 379 194.5 360.5Q190 342 190 326V0Z"/>
 
-  <g transform="translate(90 188) scale(0.7143)"><g class="box boxL"><use href="#cube"/></g></g>
-<g transform="translate(930 188) scale(0.7143)"><g class="box boxR"><use href="#cube"/></g></g>
-  <g class="walker"><g class="flip"><g transform="translate(0 188) scale(0.40) translate(-60 -146)">
+  <g transform="translate(-15.00 -157.80) scale(0.7)">
+    <g class="walker"><g class="flip"><g transform="translate(0 494) scale(0.56) translate(-60 -146)">
   <ellipse class="shadow" cx="60" cy="146" rx="30" ry="4"/>
   <g class="bob"><g class="coil">
     <g class="part legL"><rect class="joint" x="43" y="106" width="11" height="28" rx="5.5"/><circle class="joint" cx="48.5" cy="136" r="7.5"/></g>
@@ -85,5 +95,8 @@
     <rect class="screen" x="37" y="44" width="46" height="23" rx="9"/>
     <g class="eyes"><rect class="eye" x="44" y="48" width="12" height="15" rx="6"/><rect class="eye" x="64" y="48" width="12" height="15" rx="6"/></g>
   </g></g>
-</g></g><g class="box held" transform="translate(0 472.2)"><use href="#cube"/></g></g>
+</g></g><g class="box held" transform="translate(0 478.0)"><use href="#cube"/></g></g>
+    <g transform="translate(150 494)"><g class="box boxL"><use href="#cube"/></g></g>
+<g transform="translate(1350 494)"><g class="box boxR"><use href="#cube"/></g></g>
+  </g>
 </svg>
